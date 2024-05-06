@@ -1,0 +1,20 @@
+{
+    "name": "wishanddell/craft-accountnotify",
+    "description": "Notifies users when their account details are updated, such as email and password.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "require": {
+        "craftcms/cms": "^5.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "wishanddell\\accountnotify\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "accountnotify",
+        "name": "Account Notify",
+        "developer": "Wish & Dell",
+        "developerUrl": "https://www.wishanddell.co.uk"
+    }
+}

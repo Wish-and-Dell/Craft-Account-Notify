@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Account details updated</title>
+    </head>
+    <body>
+        <p>Your account on {{ siteName }} has recently been updated.</p>
+        
+        {% for field, value in diff %}
+            {% if field == 'password' %}
+            <p>Your password has been changed.</p>
+            {% else %}
+            <p>Your {{ field }} has been changed from {{ value.was }} to {{ value.now }}.</p>
+            {% endif %}
+        {% endfor %}
+
+        <p>If you did not authorise this change then please contact us immediately.</p>
+    </body>
+</html>
