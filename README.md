@@ -12,7 +12,7 @@ This plugin will compare all custom fields assigned to users via Crafts field la
 
 ## Email Template
 
-The email template can be customised by create a file in your projects templates folder called `_accountnotify.twig`
+The email template can be customised by creating a file in your projects templates folder called `_accountnotify.twig`
 This template works like any other Craft twig template with the addition of the `diff` variable which is an array of
 field changes on the user.
 
